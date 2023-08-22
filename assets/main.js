@@ -25,12 +25,21 @@ const userSourname = prompt ('inserisci il tuo cognome')
 
 const favouriteColor = prompt ('inserisci il tuo colore preferito')
 
+/* bonus calcolo data nascita */
+
+const currentYear = 2023
+
+const clientAge = prompt ('inserisci la tua età')
+
+const birthYear = currentYear - Number (clientAge)
+
 /* stampare il risultato in console */
 
-console.log (userName + userSourname + favouriteColor + '23')
+console.log (userName + userSourname + favouriteColor + birthYear)
 
 /* stampare il risultato in pagina */
 
 const infoElement = document.getElementById ('info')
 
-infoElement.innerHTML = userName + userSourname + favouriteColor + '23'
+infoElement.innerHTML = userName + userSourname + favouriteColor + birthYear
+
