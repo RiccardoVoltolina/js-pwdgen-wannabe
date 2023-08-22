@@ -24,3 +24,13 @@ const userSourname = prompt ('inserisci il tuo cognome')
 /* prompt colore preferito */
 
 const favouriteColor = prompt ('inserisci il tuo colore preferito')
+
+/* stampare il risultato in console */
+
+console.log (userName + userSourname + favouriteColor + '23')
+
+/* stampare il risultato in pagina */
+
+const infoElement = document.getElementById ('info')
+
+infoElement.innerHTML = userName + userSourname + favouriteColor + '23'
